@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/Restaurant_Logo-.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>La croisière gourmande</title>
+</head>
+<body> 
+    <div class="header" id="header">
+        <img src="assets/Restaurant_Logo-.png" alt="Logo" class="header-logo">
+        <div class="header-contener">
+            <div class="header-link"><a href="carte\carte.html">Carte</a></div>
+            <div class="header-link">Croisière</div>
+            <div class="header-link">Evénementiel</div>
+            <div class="header-link">Social</div>
+        </div>
+    </div>
+    <h1 class="titre">La Croisière Gourmande</h1>
+
+    <section class="carrousel">
+        <div class="precedant" onclick="imagePrecedente()">
+            <p>Précédant</p> 
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img  class='img-active' src="assets/1.jpg"/>
+                <img  class='img-passive' src="assets/2.jpg"/>
+                <img  class='img-passive' src="assets/3.jpg"/>
+                <img  class='img-passive' src="assets/4.jpg"/>
+                <img  class='img-passive' src="assets/5.jpg"/>
+            </div>
+            <div id="slider-nav">
+                <a onclick="position('1')" id="1" class="nav-active"></a>
+                <a onclick="position('2')" id="2" class="nav-passive"></a>
+                <a onclick="position('3')" id="3" class="nav-passive"></a>
+                <a onclick="position('4')" id="4" class="nav-passive"></a>
+                <a onclick="position('5')" id="5" class="nav-passive"></a>
+            </div>
+        </div>
+        <div class="suivant" onclick="imageSuivante()">
+            <p>Suivant</p>
+        </div>
+    </section>
+
+    <div class="region">
+        <h2 class="region-titre">Rhône-Alpes : au pays des charcuteries... </h2> 
+        <p class="region-text">
+            Située entre Paris et la Côte d'Azur, aux frontières de la Suisse et de l'Italie, Rhône-Alpes offre des territoires diversifiés.
+            <strong>Traversée de part en part par le Rhône</strong>, avec Lyon capitale des Gaules, ville lumière et son site historique classé au patrimoine mondial de l'Unesco, 
+            Rhône-Alpes nous livre ses multiples facettes : <strong>plaine ou montagne</strong> de Bourg-en-Bresse au lac de Nantua, 
+            patrimoine de la Loire autour de Saint-Etienne ou de Roanne, fraîcheur dans les gorges de l'Ardèche, 
+            <strong>visites de la Drôme du Vercors à la Provence</strong>, départs pour les grandes stations de ski depuis Grenoble. 
+            Avec le <strong>Mont-Blanc</strong> en point de mire, parmi les trois plus grands lacs de France, <strong>le lac d'Annecy</strong>, 
+            <strong>le lac du Bourget</strong> et <strong>le lac Léman</strong> contrastent avec les neiges éternelles.</p>
+    </div>
+    
+    <div class="carte">
+        <div class="carte-text">
+            <p class="carte-text-titre">Profitez de notre carte !</p>
+            <p class="carte-sous-text">
+                La région Rhône-Alpes, c'est l'Ain avec ses <strong>volailles de Bresse</strong>, c'est la Dombes avec ses <strong>grenouilles</strong>, 
+                c'est la Savoie et le Dauphiné et leurs spécialités fromagères à base de reblochon comme <strong>la tartiflette</strong> ou <strong>le soufflé au beaufort</strong>. 
+                Rhône-Alpes c'est <strong>le Tricastin et son nougat de Montélimar</strong>, c'est un avant-goût du Sud avec truffes, olives, ravioles et picodon. 
+                Le long des Côtes du Rhône se dégustent <strong>un aloyau de Fin Gras du Mézenc</strong> accompagné de son <strong>gratin dauphinois</strong>. Sur la plaine du Forez, 
+                les gourmets pourront composer leur menu autour d'une <strong>salade de barabans aux lardons</strong> suivie d'<strong>un cochon de lait du haut Forez aux baies de 
+                genièvre</strong> pour terminer sur des <strong>biscuits coulants au chocolat amer</strong>. Rhône-Alpes c'est enfin Lyon, berceau de la gastronomie, 
+                avec sa large <strong>farandole de charcuteries traditionnelles</strong> et de préparations d'abats comme le <strong>tablier de sapeur</strong>, 
+                le sabodet à la tête de porc accompagnés de son pot de beaujolais à déguster dans les nombreux <strong>« bouchons lyonnais »</strong>.
+            </p>
+            <p class="carte-sous-text"> 
+                Quant aux vins, là aussi Rhône-Alpes a trouvé avec eux de formidables ambassadeurs. <strong>Côtes du Rhône septentrionales, 
+                Beaujolais, vins de Savoie et de l'Ain</strong>, les grands crus côtoient des coteaux qui se marient à merveille avec les produits issus des mêmes terroirs.
+            </p>
+        </div>
+        <img src="assets/QR Code bleu.svg" alt="Carte" srcset="" class="carte-qr">
+    </div>
+
+    <div class="croisiere">
+        <h2 class="croisiere-titre">Un peu plus sur nos croisières</h2>
+        <p class="croisiere-text">
+            Alliez <strong>culture et gastronomie</strong> et partez à la découverte de Lyon à bord de notre bateau croisière restaurant : 
+            <strong>La Croisière Gourmande</strong>. Bouleversez votre sortie restaurant traditionnelle et <strong>embarquez à bord</strong> pour vivre un moment des plus magiques.
+        </p>
+        <p class="croisiere-text">
+            Le Chef et sa brigade concoctent une cuisine <strong>généreuse, raffinée et pleine de fraîcheur élaborée</strong> à bord des bateaux ! 
+            Des <strong>produits de saison et régionaux </strong>préparés avec soin vous offrent une explosion de saveurs. 
+            C'est au cœur de Lyon, <strong>capitale de la gastronomie française</strong> que vous vivrez <strong>une expérience riche en émotions</strong>.
+        </p>
+        <a href="#header" class="croisiere-link">En savoir plus !</a>
+    </div>
+
+    <footer> 
+        <div class="footer-contener">  
+            <img src="assets/Restaurant_Logo-.png" alt="Logo" class="footer-logo">
+            <div class="footer-links">
+                <p>Pages principale</p> 
+                <a href="#header">Osef dgiazpdja</a>
+                <a href="#header">Pour l'instant</a>
+                <a href="#header">J'ai pas dagzd </a>
+                <a href="#header">D'idée azuhddz</a>
+            </div>
+            <div class="footer-links">
+                <p>Pages complémentaire</p> 
+                <a href="#header">Je sais hazuhd</a>
+                <a href="#header">Pas quoi huzah</a>
+                <a href="#header">Mettre la hzaq</a>
+            </div>
+            <div class="footer-links">
+                <p>Socials</p>
+                <a href="https://www.instagram.com/nino_tsn/" target="_blank">GOAT CEO</a>
+                <a href="https://www.instagram.com/_ylann_malherbe/" target="_blank">Développpeur</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
