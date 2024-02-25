@@ -159,7 +159,6 @@ a:visited {
 
 .suivant {
     padding: 1em .5em 1em 4em;
-    border-radius: 50% 0 0 50%;
     justify-content: end;
 
     background-color: var(--text-color-bleu);
@@ -176,9 +175,8 @@ a:visited {
     background-color: #05284480;
 }
 
-.precedant {
+.precedent {
     padding: 1em 4em 1em .5em;
-    border-radius: 0 50% 50% 0;
 
     background-color: var(--text-color-bleu);
     color: var(--text-color-white);
@@ -190,7 +188,7 @@ a:visited {
     transition: all ease-in 100ms;
 }
 
-.precedant:hover {
+.precedent:hover {
     background-color: #05284480;
 }
 
