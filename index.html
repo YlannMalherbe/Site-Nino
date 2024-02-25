@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style-carrousel.css">
+    <link rel="stylesheet" href="style-region.css">
+    <link rel="stylesheet" href="style-carte.css">
+    <link rel="stylesheet" href="style-croisiere.css">
+    <link rel="stylesheet" href="style-header.css">
+
     <link rel="shortcut icon" href="assets/Restaurant_Logo-.ico" type="image/x-icon">
     <script src="script.js"></script>
     <title>La croisière gourmande</title>
@@ -22,26 +30,24 @@
 
     <section class="carrousel">
         <div class="precedent" onclick="imagePrecedente()">
-            <p>Précédent</p> 
         </div>
         <div class="slider-wrapper">
             <div class="slider">
-                <img class='img-passive' src="assets/1.jpg"/>
-                <img class='img-passive' src="assets/2.jpg"/>
-                <img class='img-active' src="assets/3.jpg"/>
-                <img class='img-passive' src="assets/4.jpg"/>
-                <img class='img-passive' src="assets/5.jpg"/>
+                <img  class='img-passive' src="assets/1.jpg"/>
+                <img  class='img-active' src="assets/2.jpg"/>
+                <img  class='img-passive' src="assets/3.jpg"/>
+                <img  class='img-passive' src="assets/4.jpg"/>
+                <img  class='img-passive' src="assets/5.jpg"/>
             </div>
             <div id="slider-nav">
                 <a onclick="position('1')" id="1" class="nav-passive"></a>
-                <a onclick="position('2')" id="2" class="nav-passive"></a>
-                <a onclick="position('3')" id="3" class="nav-active"></a>
+                <a onclick="position('2')" id="2" class="nav-active"></a>
+                <a onclick="position('3')" id="3" class="nav-passive"></a>
                 <a onclick="position('4')" id="4" class="nav-passive"></a>
                 <a onclick="position('5')" id="5" class="nav-passive"></a>
             </div>
         </div>
         <div class="suivant" onclick="imageSuivante()">
-            <p>Suivant</p>
         </div>
     </section>
 
@@ -75,7 +81,8 @@
                 Beaujolais, vins de Savoie et de l'Ain</strong>, les grands crus côtoient des coteaux qui se marient à merveille avec les produits issus des mêmes terroirs.
             </p>
         </div>
-        <img src="assets/QR Code bleu.svg" alt="Carte" srcset="" class="carte-qr">
+        <img src="assets/QR Code bleu.svg" alt="Carte" srcset="" class="carte-qr-bleu">
+        <img src="assets/QR Code blanc.svg" alt="Carte" srcset="" class="carte-qr-blanc">
     </div>
 
     <div class="croisiere">
@@ -93,26 +100,29 @@
     </div>
 
     <footer> 
-        <div class="footer-contener">  
+        <div class="footer-contener"> 
             <img src="assets/Restaurant_Logo-.png" alt="Logo" class="footer-logo">
-            <div class="footer-links">
-                <p>Pages principale</p> 
-                <a href="#header">Osef dgiazpdja</a>
-                <a href="#header">Pour l'instant</a>
-                <a href="#header">J'ai pas dagzd </a>
-                <a href="#header">D'idée azuhddz</a>
+            <div class="footer-links-contener">
+                <div class="footer-links">
+                    <p>Pages principale</p> 
+                    <a href="#header">Osef dgiazpdja</a>
+                    <a href="#header">Pour l'instant</a>
+                    <a href="#header">J'ai pas dagzd </a>
+                    <a href="#header">D'idée azuhddz</a>
+                </div>
+                <div class="footer-links">
+                    <p>Pages complémentaire</p> 
+                    <a href="#header">Je sais hazuhd</a>
+                    <a href="#header">Pas quoi huzah</a>
+                    <a href="#header">Mettre la hzaq</a>
+                </div>
+                <div class="footer-links">
+                    <p>Socials</p>
+                    <a href="https://www.instagram.com/nino_tsn/" target="_blank">GOAT CEO</a>
+                    <a href="https://www.instagram.com/_ylann_malherbe/" target="_blank">Développpeur</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <p>Pages complémentaire</p> 
-                <a href="#header">Je sais hazuhd</a>
-                <a href="#header">Pas quoi huzah</a>
-                <a href="#header">Mettre la hzaq</a>
-            </div>
-            <div class="footer-links">
-                <p>Socials</p>
-                <a href="https://www.instagram.com/nino_tsn/" target="_blank">GOAT CEO</a>
-                <a href="https://www.instagram.com/_ylann_malherbe/" target="_blank">Développpeur</a>
-            </div>
+            
         </div>
     </footer>
 

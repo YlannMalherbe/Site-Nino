@@ -1,0 +1,121 @@
+.carrousel {
+	padding: 2rem 0 2em 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.slider-wrapper {
+	position: relative;
+	width: 60vw;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.35);
+	border-radius: 2rem;
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider .img-active {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider .img-passive {
+    display: none;
+}
+
+#slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+#slider-nav a {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+    border: 2px solid var(--text-color-white);
+	background-color: #ffffff75;
+	transition: background-color ease 250ms;
+}
+
+#slider-nav a:hover {
+	background-color: var(--text-color-white);
+}
+
+#slider-nav a.nav-active {
+	background-color: var(--text-color-white);
+}
+#slider-nav a.nav-passive {
+	background-color: var(#ffffff75);
+}
+
+
+.precedent {
+    width: 0;
+    height: 0;
+    
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    
+    border-right: 100px solid var(--text-color-bleu);
+
+
+    transition: all ease-out 200ms;
+}
+
+.precedent:hover {
+    border-right: 100px solid var(--color-bleu-hovered);
+}
+
+
+.suivant {
+    width: 0;
+    height: 0;
+    
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    
+    border-left: 100px solid var(--text-color-bleu);
+
+    transition: all ease-out 200ms;
+}
+
+.suivant:hover {
+    border-left: 100px solid var(--color-bleu-hovered);
+}
+
+
+@media only screen and (max-width : 900px) {
+    .precedent {
+        display: none;
+    }
+    .suivant {
+        display: none;
+    }
+    .slider-wrapper {
+        height: 50vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .slider {
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
