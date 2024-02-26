@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+    font-family: system-ui;
+}
+
+:root {
+    --text-color-white: #FFFFFF;
+    --text-color-bleu: #052844;
+    --text-color-bleu-clair: rgba(85,121,165,1);
+}
+
+.body {
+    width: 100vw;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 6em;
+    background-color: var(--text-color-bleu);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 5em;
+    max-height: 5em;
+    border-radius: 50%;
+}
+
+.header-contener {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-link {
+    padding-left: 2em;
+    padding-right: 2em;
+
+    font-size: 2em;
+    color: var(--text-color-white);
+
+    padding-bottom: 0.25em;
+
+    border-bottom: 2px solid var(--text-color-white);
+    transition: all ease-in-out 200ms;
+}
+
+.header-link:hover {
+    border-bottom: 10px solid var(--text-color-white);
+}
+
+.titre {
+    width: 100%;
+    height: 2em;
+    position: sticky;
+    top: 0px;
+
+    text-align: center;
+    padding-top: 0.5em;
+
+    font-size: 3rem;
+    font-family: system-ui;
+    font-weight: 800;
+    
+    color: var(--text-color-bleu);
+    background-color: var(--text-color-white);
+
+    font-variant-caps: petite-caps;
+
+    z-index: 3;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #052844;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contener {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 3em 3em 0em;
+}
+
+.footer-logo {
+    margin-right: 4em;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 4em;
+
+}
+
+.footer-links p {
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    border-bottom: var(--text-color-white) 2px solid;
+    font-weight: bolder;
+    color: var(--text-color-white);
+
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    padding-bottom: .5em;
+    color: var(--text-color-white);
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

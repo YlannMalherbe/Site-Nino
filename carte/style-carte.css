@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+    font-family: system-ui;
+}
+
+:root {
+    --text-color-white: #FFFFFF;
+    --text-color-bleu: #052844;
+    --text-color-bleu-clair: rgba(85,121,165,1);
+}
+
+.body {
+    width: 100vw;
+}
+
+
+
+.titre {
+    width: 100%;
+    height: 2em;
+    position: sticky;
+    top: 0px;
+
+    text-align: center;
+    padding-top: 0.5em;
+
+    font-size: 3rem;
+    font-family: system-ui;
+    font-weight: 800;
+    
+    color: var(--text-color-bleu);
+    background-color: var(--text-color-white);
+
+    font-variant-caps: petite-caps;
+
+    z-index: 3;
+}
+
+@media only screen and (max-width : 1000px) {
+    .titre{
+        line-height: 1em;
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width : 431px) {
+    .titre{
+        padding-bottom: 0.5em;
+    }
+}
+
+
+.contener {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--text-color-bleu);
+    background-image: radial-gradient(
+        circle at 100% 50%,
+        transparent 1rem,
+        gold 0rem,
+        gold 1.5rem,
+        transparent 1.5rem
+      ),
+      radial-gradient(
+        circle at 0% 50%,
+        transparent 1rem,
+        gold 0rem,
+        gold 1.5rem,
+        transparent 1.5rem
+      );
+    background-size: 15rem 10rem;
+    background-position: 0 0, 0 2.5rem;
+
+    padding: 5vh 10vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contener img {
+    padding: 1em 0 1em 0;
+    height: 83vh;
+    border-bottom: 1px solid gold;
+    background-color: var(--text-color-bleu);
+
+}
+
+@media only screen and (max-width : 600px) {
+    .contener img {
+        height: auto;
+        width: 90vw;
+    }
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.retour {
+    color: var(--text-color-white);
+    font-weight: bolder;
+    font-size: 2em;
+    text-decoration: none;
+    font-variant-caps: petite-caps;
+
+    padding: .5em 1em .6em;
+    background-color: var(--text-color-bleu);
+    border-radius: 25px;
+    margin-bottom: 0.2em;
+
+    transition: all ease-in-out 200ms;
+}
+
+.retour:hover {
+    margin-bottom: 0;
+    padding: .6em 1em .7em 4em;
+    border-radius: 50% 25px 25px 50%;
+    background-color: var(--text-color-white);
+    color: var(--text-color-bleu);
+    box-shadow: var(--text-color-bleu) 0px 0px 20px;
+}
