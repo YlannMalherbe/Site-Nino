@@ -2,6 +2,7 @@
 .croisiere {
     width: 100%;
     height: 90vh;
+    min-height: 800px;
     background-image: linear-gradient(270deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.275) 77%, rgba(0,0,0,0) 100%), url('assets/bateau\ en\ croisiere.jpg');
     background-size: cover;
     color: var(--text-color-white);
