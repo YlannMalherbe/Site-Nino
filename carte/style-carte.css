@@ -77,9 +77,8 @@
     background-size: 15rem 10rem;
     background-position: 0 0, 0 2.5rem;
 
-    padding: 5vh 10vw;
+    padding: 4.8vh 10vw;
     margin-top: 2em;
-    margin-bottom: 2em;
 }
 
 .contener img {
@@ -98,11 +97,12 @@
 }
 
 .btn {
+    background-color: var(--text-color-bleu);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
+    padding: 2em;
 }
 
 .retour {
@@ -112,14 +112,16 @@
     text-decoration: none;
     font-variant-caps: petite-caps;
 
-    padding: .5em 1em .6em;
-    background-color: var(--text-color-bleu);
-    border-radius: 25px;
+    padding: .5em 2em .6em;
     margin-bottom: 0.2em;
+    
+    background-color: var(--text-color-bleu);
+    border: 2px solid var(--text-color-white);
 
     transition: all ease-in-out 200ms;
 }
 
-.retour:hover {.header-link:hover {
-    border-bottom: 10px solid var(--text-color-white);
+.retour:hover {
+    background-color: var(--text-color-white);
+    color: var(--text-color-bleu);
 }
