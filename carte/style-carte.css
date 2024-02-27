@@ -10,6 +10,7 @@
     --text-color-white: #FFFFFF;
     --text-color-bleu: #052844;
     --text-color-bleu-clair: rgba(85,121,165,1);
+    --color-bleu-hovered: #05284480;
 }
 
 .body {
@@ -119,11 +120,6 @@
     transition: all ease-in-out 200ms;
 }
 
-.retour:hover {
-    margin-bottom: 0;
-    padding: .6em 1em .7em 4em;
-    border-radius: 50% 25px 25px 50%;
-    background-color: var(--text-color-white);
-    color: var(--text-color-bleu);
-    box-shadow: var(--text-color-bleu) 0px 0px 20px;
+.retour:hover {.header-link:hover {
+    border-bottom: 10px solid var(--text-color-white);
 }
