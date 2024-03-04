@@ -96,15 +96,6 @@
     }
 }
 
-.btn {
-    background-color: var(--text-color-bleu);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-}
-
 .retour {
     color: var(--text-color-white);
     font-weight: bolder;
@@ -113,15 +104,22 @@
     font-variant-caps: petite-caps;
 
     padding: .5em 2em .6em;
+    margin-top: 1em;
     margin-bottom: 0.2em;
     
+    position: sticky;
+    bottom: 20px;
+    
     background-color: var(--text-color-bleu);
-    border: 2px solid var(--text-color-white);
+    border: 2px solid var(--text-color-bleu);
 
     transition: all ease-in-out 200ms;
 }
 
+
+
 .retour:hover {
     background-color: var(--text-color-white);
     color: var(--text-color-bleu);
+    border-color: var(--text-color-bleu);
 }
