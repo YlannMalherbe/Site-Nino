@@ -11,6 +11,7 @@
     --text-color-bleu: #052844;
     --text-color-bleu-clair: rgba(85,121,165,1);
     --color-bleu-hovered: #05284480;
+    --color-gold: #C99C4B;
 }
 
 .body {
@@ -63,15 +64,15 @@
     background-image: radial-gradient(
         circle at 100% 50%,
         transparent 1rem,
-        gold 0rem,
-        gold 1.5rem,
+        var(--color-gold) 0rem,
+        var(--color-gold) 1.5rem,
         transparent 1.5rem
       ),
       radial-gradient(
         circle at 0% 50%,
         transparent 1rem,
-        gold 0rem,
-        gold 1.5rem,
+        var(--color-gold) 0rem,
+        var(--color-gold) 1.5rem,
         transparent 1.5rem
       );
     background-size: 15rem 10rem;
@@ -84,7 +85,7 @@
 .contener img {
     padding: 1em 0 1em 0;
     height: 83vh;
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid var(--color-gold);
     background-color: var(--text-color-bleu);
 
 }
@@ -97,7 +98,7 @@
 }
 
 .retour {
-    color: var(--text-color-white);
+    color: var(--color-gold);
     font-weight: bolder;
     font-size: 2em;
     text-decoration: none;
@@ -110,16 +111,19 @@
     position: sticky;
     bottom: 20px;
     
-    background-color: var(--text-color-bleu);
-    border: 2px solid var(--text-color-bleu);
+    background-color: var(--text-color-white);
+    border: 2px solid var(--color-gold);
 
     transition: all ease-in-out 200ms;
+}
+.retour:visited {
+    color: var(--color-gold);
 }
 
 
 
 .retour:hover {
-    background-color: var(--text-color-white);
-    color: var(--text-color-bleu);
-    border-color: var(--text-color-bleu);
+    background-color: var(--text-color-bleu);
+    color: var(--text-color-white);
+    border-color: var(--text-color-white);
 }
